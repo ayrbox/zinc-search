@@ -14,7 +14,7 @@ const handler: NextApiHandler = async (req, res) => {
     const url = `${host}/api/${STUDENT_INDEX}/_search`;
 
     const query = {
-      search_type: "querystring",
+      search_type: "term",
       query: { term },
       from: 0,
       max_results: 10,
